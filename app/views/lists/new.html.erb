@@ -1,0 +1,7 @@
+<h1>Here is a new list</h1>
+
+<%= form_with model: @list do |l| %>
+  <%= l.label :name %>
+  <%= l.text_field :name, class: 'form-control'%>
+<%= l.submit class: 'btn btn-primary' %>
+<% end %>

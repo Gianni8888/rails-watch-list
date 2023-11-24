@@ -24,3 +24,11 @@ movies['results'].each do |movie|
   puts "Created #{movie.title}"
 end
 puts 'Done!'
+
+lists = ["comedy", "drama", "historical"]
+
+lists.each do |list|
+  List.create(
+    name: list
+  )
+end
